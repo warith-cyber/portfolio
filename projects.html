@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Document Metadata -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Personal portfolio of Your Name — projects, CV, and contact." />
+  <title>Projects · Portfolio</title>
+  <!-- Shared Assets -->
+  <link rel="preload" href="assets/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="images/gambar_profile.jpeg" type="image/jpeg" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <!-- Accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/gambar_profile.jpeg" alt="" class="brand-avatar" />
+        <span class="brand-text">Warith Iskandar</span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Primary">
+        <button id="mobileMenu" class="icon-btn" aria-controls="navList" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <ul id="navList" class="nav-list">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="cv.html" >CV</a></li>
+          <li><a href="gallery.html" >Gallery</a></li>
+          <li><a href="mailto:warith@graduate.utm.my">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main id="main" class="container">
+
+<!-- Page Header -->
+<header class="page-header">
+  <h1>Projects</h1>
+  <p class="muted">Selected work. Each card links to code or demos (external) and details (internal).</p>
+</header>
+
+<!-- Project 1 -->
+<section id="realtime-dashboard" class="project-section">
+  <div class="grid project-grid">
+    <div class="media_glass mobile-preview">
+      <img src="images/QR code.jpeg" alt="Screenshot of Realtime Dashboard project" />
+    </div>
+    <div class="content">
+      <h2>Lost and Found webapp</h2>
+      <p>A web application for reporting lost items by using QR codes. Focus on mobile usability.</p>
+      <p><a class="btn" href="assignment_project/Qr code/index.html" target="_blank" rel="noopener">Navigate to</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Project 2 -->
+<section id="ux-library" class="project-section">
+  <div class="grid project-grid">
+    <div class="media_glass desktop-preview">
+      <img src="images/dbku_dashboard.png" alt="Screenshot of UX Library project" />
+    </div>
+    <div class="content">
+      <h2>DBKU Dashboard</h2>
+      <p>Build a dashboard for visualizing spatial data of tree distribution focusing on CO2 absorption in the Satok area.</p>
+      <p><a class="btn" href="assignment_project/klgis2-g3/index.html" target="_blank" rel="noopener">Navigate to</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Project 3 -->
+<section id="product-teaser" class="project-section">
+  <div class="grid project-grid">
+    <div class="media_glass desktop-preview">
+      <img src="images/weather_dashboard.png" alt="Screenshot of Weather Forecast project" />
+    </div>
+    <div class="content">
+      <h2>Weather Dashboard</h2>
+      <p>Malaysia weather dashboard categorized by states that completed with real-time information and a rain cluster Malaysia map.</p>
+      <p><a class="btn" href="assignment_project/weather forecast/index.html" taget="_blank" rel="noopener">Navigate to</a></p>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Warith Iskandar — Built with HTML, CSS & JS. <a href="https://validator.w3.org/">Validate</a></p>
+      <div class="socials">
+        <a href="https://github.com/warith-cyber/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/warith-iskandar-569707346/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

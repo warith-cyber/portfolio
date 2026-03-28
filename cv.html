@@ -1,0 +1,128 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Document Metadata -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Personal portfolio of Warith Iskandar — projects, CV, and contact." />
+  <title>CV · Portfolio</title>
+  <!-- Shared Assets -->
+  <link rel="preload" href="assets/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="images/gambar_profile.jpeg" type="image/jpeg" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <!-- Accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/gambar_profile.jpeg" alt="" class="brand-avatar" />
+        <span class="brand-text">Warith Iskandar</span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Primary">
+        <button id="mobileMenu" class="icon-btn" aria-controls="navList" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <ul id="navList" class="nav-list">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="projects.html" >Projects</a></li>
+          <li><a href="cv.html" aria-current="page">CV</a></li>
+          <li><a href="gallery.html" >Gallery</a></li>
+          <li><a href="mailto:warith@graduate.utm.my">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main id="main" class="container">
+
+<!-- Page Header -->
+<header class="page-header">
+  <h1>Curriculum Vitae</h1>
+  <p class="muted">Download or browse the structured CV below.</p>
+  <div class="cta-row">
+    <a class="btn" href="images/CV_download.png" download>Download CV</a>
+  </div>
+</header>
+
+<!-- CV Content Section -->
+<section class="cv two-col">
+  <aside class="cv-aside glass">
+    <img class="profile-pic-lg" src="images/gambar_profile.jpeg" alt="Profile picture placeholder" />
+    <h2>Muhammad Warith Iskandar</h2>
+    <p class="muted">GIS Web Developer</p>
+    <ul class="cv-list">
+      <li><strong>Email:</strong> <a href="mailto:warith@graduate.utm.my">warith@graduate.utm.my</a></li>
+      <li><strong>Location:</strong> Universiti Teknologi Malaysia, UTM Johor Bahru, 81310 Johor Malaysia.</li>
+      <li><strong>Website:</strong> <a href="https://portfolio-one-kappa-68.vercel.app" target="_blank" rel="noopener">https://portfolio-one-kappa-68.vercel.app</a></li>
+    </ul>
+    <h3>Skills</h3>
+    <ul class="tags">
+      <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Arcmap</li><li>DBMS</li><li>QGIS</li><li>UI/UX</li><li>Figma</li>
+      <li>Statistic/Spatial Statistics</li><li>Spatial Analysis</li><li>Remote Sensing</li><li>Photogrammetry</li>
+    </ul>
+  </aside>
+  <div class="cv-main">
+    <!-- Experience Section -->
+    <section>
+      <h2>Experience</h2>
+      <article>
+        <header><h3> Training on Open Street Map — Open Mapping Hub, Asia-Pacific</h3><span class="muted">2025</span></header>
+        <ul>
+          <li>Hands on experience in digitizing and mapping on the Open Street Map platform.</li>
+          <li>Learning to use the platform effectively to support humanitarian and development efforts</li>
+        </ul>
+      </article>
+      <article>
+        <header><h3> GIS camp at Teluk Gorek,Mersing,Johor - UTM</h3><span class="muted">2025</span></header>
+        <ul>
+          <li>Hands-on experience in team on the process of collection data by using surveys techniques like (traverse, leveling and detailing)</li>
+          <li>Used lidar and drone as for photogrammetry to capture terrain data.</li>
+          <li>Worked with ArcMap and QGIS for data processing and visualization.</li>
+        </ul>
+      </article>
+      <article>
+        <header><h3>GIS camp at UTM, Johor</h3><span class="muted">2026</span></header>
+        <ul>
+          <li>Experience in team to build a dashboard system for DBKU, Kuching, Sarawak based on provided spatial data.</li>
+          <li>Learning how to build frontend web development and use backend such as PHP or Node.JS to connect to the postgresql database.</li>
+          <li>Sharpen my problem solving skill on how to use and manage the limited provided spatial data.</li>
+        </ul>
+      </article>
+    </section>
+    <!-- Education Section -->
+    <section>
+      <h2>Education</h2>
+      <p>Degree - Bachelor in Science Geoinformatic with Honor — Universiti Teknologi Malaysia, 2023–2027</p>
+      <p>STPM - Science Social Geography Major — Kolej Tingkatan Enam Kulim, 2021–2023</p>
+      <p>SPM - Science Major — SMK Padang Serai, 2016–2021</p>
+    </section>
+    <!-- Certifications Section -->
+    <section>
+      <h2>Certifications / Awards</h2>
+      <ul>
+        <li>Dean list in Semester 1 ,4 and 5. 2023/2024/2025</li>
+        <li>3rd placed Digitizing certificate by Open Street Map, 2025</li>
+        <li>Geostar Participation certificate by Grab, 2025</li>
+      </ul>
+    </section>
+  </div>
+</section>
+
+  </main>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Warith Iskandar — Built with HTML, CSS & JS. <a href="https://validator.w3.org/">Validate</a></p>
+      <div class="socials">
+        <a href="https://github.com/warith-cyber/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/warith-iskandar-569707346/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

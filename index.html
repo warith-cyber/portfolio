@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Document Metadata -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Personal portfolio of Warith Iskandar — projects, CV, and contact." />
+  <title>Home · Portfolio</title>
+  <!-- Shared Assets -->
+  <link rel="preload" href="assets/styles.css" as="style" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="images/profile.svg" type="image/svg+xml" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <!-- Accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/gambar_profile.jpeg" alt="" class="brand-avatar" />
+        <span class="brand-text">Warith Iskandar</span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Primary">
+        <button id="mobileMenu" class="icon-btn" aria-controls="navList" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        <ul id="navList" class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="projects.html" >Projects</a></li>
+          <li><a href="cv.html" >CV</a></li>
+          <li><a href="gallery.html" >Gallery</a></li>
+          <li><a href="mailto:warith@graduate.utm.my">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌓</button>
+    </div>
+  </header>
+  <!-- Main Content -->
+  <main id="main" class="container">
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <h1 class="gradient-text">Hi, I’m <span class="emph">Muhammad Warith Iskandar</span>.</h1>
+      <p class="lead">I build useful things for the humanity — focusing on GIS web, accessible UX, and analyzing spatial data.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="projects.html">View Projects</a>
+        <a class="btn" href="cv.html">See CV</a>
+      </div>
+    </div>
+    <div class="hero-media glass">
+      <img src="images/gambar_profile.jpeg" alt="Profile picture placeholder" class="profile-pic" />
+    </div>
+  </div>
+</section>
+
+<!-- Featured Projects Section -->
+<section class="cards">
+  <h2>Featured Projects</h2>
+  <div class="grid cards-grid">
+    <article class="card">
+      <h3><a href="assignment_project/Qr code/index.html" target="_blank" rel="noopener">Lost and Found webapp</a></h3>
+      <p>A web application for reporting lost items by using QR codes.</p>
+      <a class="chip" href="projects.html#Lost and Found webapp">Learn more</a>
+    </article>
+    <article class="card">
+      <h3><a href="assignment_project/klgis2-g3/index.html" target="_blank" rel="noopener">DBKU Dashboard</a></h3>
+      <p>Build a dashboard for visualizing spatial data of tree distribution focusing on CO2 absorption in the Satok area.</p>
+      <a class="chip" href="projects.html#DBKU Dashboard">Learn more</a>
+    </article>
+    <article class="card">
+      <h3><a href="assignment_project/weather forecast/index.html" target="_blank" rel="noopener">Weather Dashboard</a></h3>
+      <p>Personal weather dashboard project.</p>
+      <a class="chip" href="projects.html#Weather Dashboard">Learn more</a>
+    </article>
+  </div>
+</section>
+
+  </main>
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Warith Iskandar — Built with HTML, CSS & JS. <a href="https://validator.w3.org/">Validate</a></p>
+      <div class="socials">
+        <a href="https://github.com/warith-cyber/" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/warith-iskandar-569707346/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

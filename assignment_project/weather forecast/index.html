@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ==============
+     head
+     ============== -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malaysia Weather Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<!-- ==============
+     body
+     ============== -->
+<body>
+  <!-- ==============
+       background layer
+       ============== -->
+  <div class="bg-layer" aria-hidden="true"></div>
+
+  <!-- ==============
+       top bar
+       ============== -->
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Live Weather Intelligence</p>
+      <h1>Malaysia State Weather Dashboard</h1>
+      <p class="subhead">Filter by state and view latest temperature, cloud moisture, and wind speed.</p>
+    </div>
+    <div class="timestamp-panel">
+      <p class="timestamp-label">Current local time</p>
+      <strong id="dashboardNow">-</strong>
+      <p id="apiTimeInfo">Waiting for latest weather data...</p>
+    </div>
+  </header>
+
+  <!-- ==============
+       main content
+       ============== -->
+  <main class="layout">
+    <!-- ==============
+         controls panel
+         ============== -->
+    <section class="panel controls-panel">
+      <div class="control-group">
+        <label for="stateSelect">State Category</label>
+        <select id="stateSelect" aria-label="Select Malaysia state"></select>
+      </div>
+      <p class="helper">Includes Kedah, Penang, Perak, Selangor, and all other Malaysian states/federal territories.</p>
+    </section>
+
+    <!-- ==============
+         current stats panel
+         ============== -->
+    <section class="panel stats-panel">
+      <article class="stat-card">
+        <p>Temperature</p>
+        <h2 id="temperatureNow">-</h2>
+        <small id="temperatureTime">-</small>
+      </article>
+      <article class="stat-card">
+        <p>Cloud Moisture</p>
+        <h2 id="cloudNow">-</h2>
+        <small id="cloudTime">-</small>
+      </article>
+      <article class="stat-card">
+        <p>Wind Speed</p>
+        <h2 id="windNow">-</h2>
+        <small id="windTime">-</small>
+      </article>
+      <article class="stat-card">
+        <p>Humidity</p>
+        <h2 id="humidityNow">-</h2>
+        <small id="humidityTime">-</small>
+      </article>
+    </section>
+
+    <!-- ==============
+         interactive map panel
+         ============== -->
+    <section class="panel map-panel">
+      <div class="panel-head">
+        <h3>Rain Cluster Malaysia Map</h3>
+        <p>Pan, zoom, and tap a state border to filter weather data.</p>
+      </div>
+      <div class="map-wrap">
+        <button id="bufferToggleBtn" type="button" class="map-toggle-btn" aria-pressed="false">Buffer Radius: OFF</button>
+        <div id="map" class="map-canvas" aria-label="Malaysia states weather map"></div>
+      </div>
+      <p id="mapStatus" class="map-status">Loading state boundaries...</p>
+    </section>
+
+    <!-- ==============
+         rain frequency panel
+         ============== -->
+    <section class="panel rain-panel">
+      <div class="panel-head">
+        <h3>Rain Frequency (Last 7 Days)</h3>
+        <p id="rainFrequencyInfo">Waiting for rain-frequency data...</p>
+      </div>
+      <div class="rain-frequency-wrap">
+        <canvas id="rainFrequencyChart" class="rain-frequency-chart" aria-label="Rain frequency bar chart by day"></canvas>
+      </div>
+      <p id="rainFrequencyStatus" class="rain-frequency-status">Loading rain-frequency data...</p>
+    </section>
+
+  </main>
+
+  <!-- ==============
+       footer
+       ============== -->
+  <footer class="footer-note">
+    <p>Data APIs: Open-Meteo weather API and public Malaysia state GeoJSON boundaries.</p>
+  </footer>
+
+  <!-- ==============
+       scripts
+       ============== -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
