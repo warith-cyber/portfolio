@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Tree Distribution Dashboard</title>
+    <!-- Link to Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style1.css"/>
+</head>
+
+<style>
+.logo-container img {
+            height: 90px;
+            width: auto;
+            background: transparent;  /* Changed from white to transparent */
+            padding: 0;               /* Remove padding to prevent white edges */
+            border-radius: 0;         /* Remove border radius if you want */
+            margin: 0 5px;
+            object-fit: contain;      /* Ensures the logo maintains aspect ratio */
+        }
+
+        /* Optional: Add a subtle hover effect */
+        .logo-container img:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease;
+        }
+
+</style>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Satok Area Tree Distribution Dashboard</h1>
+                    <small>Urban Tree Distribution & Carbon Stock Analysis</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="logo-container d-inline-block">
+                        <img src="img/LOGO.png" alt="Sarawak Logo" onerror="this.style.display='none'">
+                    </div>
+                    <div class="mt-2">
+                        <small>Last Updated: February 15, 2026</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="index.html" style="color: var(--primary-color); font-weight: 700;">Help</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="fas fa-chart-line"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-users"></i> About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="help.html">
+                            <i class="fas fa-question-circle"></i> Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="help-page help-only">
+        <div class="container">
+            <div class="help-card help-shell">
+                <div class="help-hero">
+                    <div class="help-hero-content">
+                        <p class="help-kicker">Help & Documentation</p>
+                        <h1>Navigate, filter, and analyze Satok's urban tree intelligence</h1>
+                        <p class="subtitle">A quick guide to exploring the Satok Tree Distribution Dashboard, from data filters and charts to the interactive map and carbon estimation workflow.</p>
+                        <div class="help-tags">
+                            <span><i class="fas fa-filter"></i> Filters</span>
+                            <span><i class="fas fa-chart-bar"></i> Charts</span>
+                            <span><i class="fas fa-map-marked-alt"></i> Map Layers</span>
+                            <span><i class="fas fa-calculator"></i> Carbon Metrics</span>
+                        </div>
+                    </div>
+                    <div class="help-hero-panel">
+                        <h3>Quick Start</h3>
+                        <ol>
+                            <li>Choose tree type, road class, and owner filters.</li>
+                            <li>Review charts for distribution and CO2 absorption.</li>
+                            <li>Inspect map markers for tree-level details.</li>
+                        </ol>
+                        <div class="help-note">
+                            <i class="fas fa-lightbulb"></i>
+                            Use the “Last Updated” date in the header to confirm dataset freshness.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="help-grid">
+                    <div class="section help-section-card">
+                        <h2><i class="fas fa-info-circle"></i> About the Dashboard</h2>
+                        <p>The Satok Area Tree Distribution Dashboard provides comprehensive visualization and analysis of urban tree distribution and carbon stock in the Satok area of Kuching, Sarawak. This tool helps urban planners, environmentalists, and city officials make data-driven decisions about urban forestry management.</p>
+                    </div>
+
+                    <div class="section help-section-card">
+                        <h2><i class="fas fa-filter"></i> Using Filters</h2>
+                        <p>The dashboard provides several filtering options to help you analyze specific tree data:</p>
+                        <ul>
+                            <li><strong>Tree Type:</strong> Filter by tree species (Mahogany, Angsana, Mimusops, etc.)</li>
+                            <li><strong>Road Type:</strong> Filter by location category (Roadside, Housing Area, Parks, Commercial)</li>
+                            <li><strong>Owner:</strong> Filter by tree ownership (DBKU, Others)</li>
+                            <li><strong>Location:</strong> Filter by specific street names</li>
+                            <li><strong>Minimum Diameter:</strong> Use the slider to filter trees by minimum diameter size</li>
+                        </ul>
+                        <p>Charts will automatically update when you change any filter. To reset, select "All" for each dropdown and move the diameter slider to minimum.</p>
+                    </div>
+
+                    <div class="section help-section-card">
+                        <h2><i class="fas fa-chart-bar"></i> Understanding the Charts</h2>
+                        <p>The dashboard displays four main visualizations:</p>
+                        <ul>
+                            <li><strong>Tree Distribution by Road Type:</strong> Bar chart showing total number of trees across different road classifications</li>
+                            <li><strong>Average CO₂ Absorption by Species:</strong> Pie chart displaying average carbon sequestration rates by tree species</li>
+                            <li><strong>Tree Distribution by Owner:</strong> Doughnut chart showing ownership distribution of trees</li>
+                            <li><strong>Tree Distribution by Location:</strong> Horizontal bar chart showing tree counts by street location</li>
+                        </ul>
+                    </div>
+
+                    <div class="section help-section-card">
+                        <h2><i class="fas fa-calculator"></i> Carbon Calculation Methodology</h2>
+                        <p>CO₂ sequestration and carbon stock values are calculated using the Above Ground Biomass (AGB) formula:</p>
+                        <div class="formula-box">
+                            <div class="formula">AGB<sub>est</sub> = 0.0673 × (ρD<sup>2</sup>H)<sup>0.976</sup></div>
+                            <div class="formula-note">Where D is in cm, H is in m, and ρ is in g cm<sup>-3</sup>.</div>
+                        </div>
+                        <p>Carbon stock is then calculated from AGB, and CO₂ sequestration represents the annual carbon capture rate of each tree.</p>
+                    </div>
+
+                    <div class="section help-section-card">
+                        <h2><i class="fas fa-map-marked-alt"></i> Interactive Map</h2>
+                        <p>The interactive map shows the geographical distribution of trees with the following features:</p>
+                        <ul>
+                            <li><strong>Tree Markers:</strong> Click on markers to view detailed tree information</li>
+                            <li><strong>Roads Layer:</strong> Toggle road network visibility</li>
+                            <li><strong>Orthophoto:</strong> Toggle aerial imagery for context</li>
+                            <li><strong>Opacity Control:</strong> Adjust transparency of map layers</li>
+                            <li><strong>Reset View:</strong> Return to default map extent</li>
+                        </ul>
+                    </div>
+
+                    <div class="section help-section-card">
+                        <h2><i class="fas fa-database"></i> Data Source</h2>
+                        <p>All data is provided and maintained by Dewan Bandaraya Kuching Utara (DBKU). The database includes detailed information about each tree including species, location, size measurements, health status, and calculated carbon metrics.</p>
+                        <p>Data is stored in a PostgreSQL database with PostGIS extension for spatial analysis capabilities.</p>
+                    </div>
+
+                    <div class="section help-section-card">
+                        <h2><i class="fas fa-mobile-alt"></i> Mobile Usage</h2>
+                        <p>This dashboard is fully responsive and optimized for mobile devices:</p>
+                        <ul>
+                            <li>Navigation menu collapses into a hamburger menu on small screens</li>
+                            <li>Charts automatically resize for optimal viewing</li>
+                            <li>Filters stack vertically for easy access</li>
+                            <li>Touch-friendly controls for map interaction</li>
+                        </ul>
+                    </div>
+
+                    <div class="section help-section-card section-wide">
+                        <h2><i class="fas fa-question"></i> Frequently Asked Questions</h2>
+                        <p><strong>Q: Why do some charts show "Unknown" values?</strong></p>
+                        <p>A: This indicates missing data in the database for certain trees. Contact DBKU to update incomplete records.</p>
+                        
+                        <p><strong>Q: Can I export the data?</strong></p>
+                        <p>A: Data export is managed by system administrators. Contact your administrator for custom export requests.</p>
+                        
+                        <p><strong>Q: How often is the data updated?</strong></p>
+                        <p>A: The database is updated regularly by DBKU field teams. Check the "Last Updated" date in the header for the most recent update.</p>
+                        
+                        <p><strong>Q: What browsers are supported?</strong></p>
+                        <p>A: The dashboard works best on modern browsers: Chrome, Firefox, Safari, and Edge (latest versions).</p>
+                    </div>
+
+                    <div class="section help-section-card section-wide">
+                        <h2><i class="fas fa-envelope"></i> Contact & Support</h2>
+                        <p>For technical support, data inquiries, or feedback about the dashboard, please contact:</p>
+                        <p><strong>Dewan Bandaraya Kuching Utara (DBKU)</strong><br>
+                        Urban Forestry Division<br>
+                        Email: info@dbku.sarawak.gov.my</p>
+                    </div>
+                </div>
+
+                <button class="btn back-button" onclick="window.location.href='index.html'">
+                    <i class="fas fa-arrow-left"></i> Back to Dashboard
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <h6>Data Source</h6>
+                    <p>Data provided by Dewan Bandaraya Kuching Utara (DBKU)</p>
+                </div>
+                <div class="col-md-6">
+                    <h6>Methodology</h6>
+                    <p>Carbon calculation based on Above Ground Biomass (AGB) formula.</p>
+                </div>
+            </div>
+            <div class="text-center pt-3 border-top">
+                <small>&copy; 2026 Satok Area Tree Distribution Dashboard</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js" integrity="sha384-KJ3o2DKtIkvYIKXkS1dKjwU4yXjLuV2E+XZC/CyqFq4HHK+HZkcf3RIWm8u6kGq2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0J2QKjL+AvR6tW5L2BfN7im3T9QrxpgxgHt0/1YX7vYX7Uls" crossorigin="anonymous"></script>
+</body>
+</html>

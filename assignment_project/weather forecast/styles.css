@@ -1,0 +1,439 @@
+/* ==============
+   root
+   ============== */
+:root {
+  --bg-deep: #072a4a;
+  --bg-mid: #0a4d80;
+  --bg-soft: #d8ecff;
+  --card: rgba(255, 255, 255, 0.94);
+  --line: rgba(22, 86, 143, 0.25);
+  --text-strong: #032745;
+  --text-soft: #2b587b;
+  --accent: #0b72c4;
+  --accent-light: #3c9de4;
+  --success: #0f9ad6;
+  --shadow: 0 16px 34px rgba(4, 33, 61, 0.18);
+  --radius: 18px;
+}
+
+/* ==============
+   global
+   ============== */
+* {
+  box-sizing: border-box;
+}
+
+/* ==============
+   body
+   ============== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--text-strong);
+  background: linear-gradient(160deg, #e8f4ff 0%, #c9e5ff 42%, #f5fbff 100%);
+}
+
+/* ==============
+   background layer
+   ============== */
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255, 255, 255, 0.85), transparent 28%),
+    radial-gradient(circle at 85% 24%, rgba(180, 221, 255, 0.9), transparent 35%),
+    radial-gradient(circle at 70% 80%, rgba(110, 188, 247, 0.3), transparent 45%);
+}
+
+/* ==============
+   shared layout width
+   ============== */
+.topbar,
+.layout,
+.footer-note {
+  width: min(1180px, 92vw);
+  margin-inline: auto;
+}
+
+/* ==============
+   topbar
+   ============== */
+.topbar {
+  padding: 1.15rem 0 0.7rem;
+  display: grid;
+  gap: 0.9rem;
+}
+
+/* ==============
+   topbar text
+   ============== */
+.eyebrow {
+  margin: 0;
+  font-size: 0.74rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0.2rem 0;
+  font-size: clamp(1.2rem, 4.5vw, 2.2rem);
+}
+
+.subhead {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+/* ==============
+   timestamp panel
+   ============== */
+.timestamp-panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  box-shadow: var(--shadow);
+}
+
+.timestamp-label {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+#dashboardNow {
+  display: block;
+  margin-top: 0.28rem;
+  font-size: 1.05rem;
+}
+
+#apiTimeInfo {
+  margin: 0.36rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-soft);
+}
+
+/* ==============
+   main layout
+   ============== */
+.layout {
+  display: grid;
+  gap: 0.9rem;
+  padding-bottom: 1.2rem;
+}
+
+/* ==============
+   panel base
+   ============== */
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 0.92rem;
+}
+
+/* ==============
+   controls panel
+   ============== */
+.controls-panel {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.control-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--text-soft);
+}
+
+.control-group select {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  padding: 0.72rem;
+  font: inherit;
+  color: var(--text-strong);
+  background: #fff;
+}
+
+/* ==============
+   primary button
+   ============== */
+.primary-btn {
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(120deg, var(--accent), var(--accent-light));
+  color: #fff;
+  padding: 0.72rem 0.95rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.18s ease, filter 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.primary-btn:disabled {
+  cursor: wait;
+  opacity: 0.74;
+}
+
+.helper {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+/* ==============
+   stats section
+   ============== */
+.stats-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.72rem;
+}
+
+.stat-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(165deg, #ffffff 0%, #eff7ff 100%);
+  padding: 0.75rem;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  font-weight: 600;
+}
+
+.stat-card h2 {
+  margin: 0.36rem 0;
+  font-size: clamp(1.1rem, 5vw, 1.8rem);
+}
+
+.stat-card small {
+  color: var(--text-soft);
+  font-size: 0.74rem;
+}
+
+/* ==============
+   panel heading
+   ============== */
+.panel-head h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.panel-head p {
+  margin: 0.32rem 0 0;
+  font-size: 0.8rem;
+  color: var(--text-soft);
+}
+
+/* ==============
+   map section
+   ============== */
+.map-tools {
+  margin-top: 0.62rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.map-wrap {
+  position: relative;
+  margin-top: 0.72rem;
+}
+
+.map-toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 500;
+  border: 1px solid rgba(8, 61, 118, 0.55);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.96);
+  color: #0a3d76;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.4rem 0.68rem;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(3, 39, 69, 0.22);
+  transition: transform 0.18s ease, filter 0.18s ease, background-color 0.18s ease, color 0.18s ease;
+}
+
+.map-toggle-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+}
+
+.map-toggle-btn.is-on {
+  border-color: #08346b;
+  background: linear-gradient(120deg, #0a3f7a, #072f5f);
+  color: #fff;
+}
+
+.map-canvas {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.map-status {
+  margin: 0.45rem 0 0;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
+/* ==============
+   rain frequency chart
+   ============== */
+.rain-panel {
+  border-left: 4px solid rgba(11, 114, 196, 0.25);
+}
+
+.rain-frequency-wrap {
+  margin-top: 0.62rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(238, 247, 255, 0.95) 100%);
+  padding: 0.5rem 0.45rem 0.3rem;
+  height: 245px;
+}
+
+.rain-frequency-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.rain-frequency-status {
+  margin: 0.45rem 0 0;
+  font-size: 0.78rem;
+  color: var(--text-soft);
+}
+
+/* ==============
+   rain markers
+   ============== */
+.rain-marker {
+  background: transparent;
+  border: none;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rain-fa-icon {
+  font-size: 18px;
+  color: #1b6fba;
+  text-shadow:
+    0 0 0 #ffffff,
+    0 4px 10px rgba(5, 48, 92, 0.35);
+  line-height: 1;
+  display: block;
+}
+
+.rain-fa-icon--medium {
+  color: #0d5fa8;
+}
+
+.rain-fa-icon--heavy {
+  color: #0a4b8a;
+}
+
+/* ==============
+   footer
+   ============== */
+.footer-note {
+  padding: 0.4rem 0 1.5rem;
+}
+
+.footer-note p {
+  margin: 0;
+  text-align: center;
+  color: var(--text-soft);
+  font-size: 0.78rem;
+}
+
+/* ==============
+   leaflet overrides
+   ============== */
+.leaflet-container {
+  font: inherit;
+}
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  border-radius: 10px;
+}
+
+/* ==============
+   responsive tablet
+   ============== */
+@media (min-width: 760px) {
+  .topbar {
+    grid-template-columns: 1.6fr 1fr;
+    align-items: center;
+    padding-top: 1.3rem;
+  }
+
+  .layout {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0.95rem;
+  }
+
+  .controls-panel {
+    grid-column: span 4;
+    align-content: start;
+  }
+
+  .stats-panel {
+    grid-column: span 8;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .map-panel {
+    grid-column: span 12;
+  }
+
+  .rain-panel {
+    grid-column: span 12;
+  }
+
+  .map-canvas {
+    height: 430px;
+  }
+
+  .rain-frequency-wrap {
+    height: 280px;
+    padding: 0.6rem 0.55rem 0.35rem;
+  }
+}
+
+/* ==============
+   responsive desktop
+   ============== */
+@media (min-width: 1080px) {
+  .map-panel {
+    grid-column: span 12;
+  }
+
+  .rain-panel {
+    grid-column: span 12;
+  }
+}
