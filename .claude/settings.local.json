@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/warit/AppData/Local/Temp/claude/c--xampp-htdocs-portfolio-main/b7717c2a-7a9f-47b8-8c06-daafcfc25b3e/scratchpad/Project-gis-softwarer/Project-gis-softwarer-biodiversity-system/system/backend/**)",
+      "Bash(npm install *)",
+      "Bash(\"/c/xampp/mysql/bin/mysql.exe\" -u root -e \"CREATE DATABASE IF NOT EXISTS biodiversity_pwa CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci; SHOW DATABASES LIKE 'biodiversity_pwa';\")",
+      "Bash(mkdir -p /c/Users/warit/AppData/Local/Temp/claude/c--xampp-htdocs-portfolio-main/b7717c2a-7a9f-47b8-8c06-daafcfc25b3e/scratchpad/shot-tool)",
+      "Read(//c/Users/warit/AppData/Local/Temp/claude/c--xampp-htdocs-portfolio-main/b7717c2a-7a9f-47b8-8c06-daafcfc25b3e/scratchpad/**)",
+      "Bash(npm init *)",
+      "Bash(cd /c/Users/warit/AppData/Local/Temp/claude/c--xampp-htdocs-portfolio-main/b7717c2a-7a9f-47b8-8c06-daafcfc25b3e/scratchpad/shot-tool)",
+      "Bash(node shot.js \"/c/xampp/htdocs/portfolio-main/images/bioreport-screenshot.png\")"
+    ]
+  }
+}
