@@ -295,6 +295,13 @@ body{
   font-size: .92rem;
   color: var(--muted);
 }
+.gallery-item figcaption .chip{
+  display: block;
+  width: fit-content;
+  margin-top: .6rem;
+  color: var(--text);
+}
+.gallery-item figcaption .chip:hover{ color: var(--accent); }
 .gallery-item img:focus-visible{
   outline: 2px solid var(--accent);
   outline-offset: 3px;
