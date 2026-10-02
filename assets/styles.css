@@ -749,7 +749,7 @@ main::after{
 
   .gallery-grid{ grid-template-columns: repeat(2, 1fr); }
   .lightbox-image{ max-height: 72vh; }
-  .page-header::before{ right: -1rem; width: 6.5rem; bottom: -4.2rem; }
+  .page-header::before{ right: -1rem; width: 5.5rem; bottom: -5rem; }
 }
 
 @media (max-width: 560px) {
